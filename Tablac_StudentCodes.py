@@ -7,6 +7,13 @@ prelim = round(float(input(f"Enter your prelim grade: ")), 2)
 midterm = round(float(input(f"Enter your midterm grade: ")), 2)
 final = round(float(input(f"Enter your final grade: ")), 2)
 
+if (prelim < 40 or prelim > 100):
+        print("Invalid prelim grade.")
+if (midterm < 40 or midterm > 100):
+        print("Invalid midterm grade.")
+if (final < 40 or final > 100):
+        print("Invalid final grade.")
+
 if (prelim >= 40 and prelim <= 100) and (midterm >= 40 and midterm <= 100) and (final >= 40 and final <= 100):    
     prelim = (33.33 * prelim) / 100
     midterm = (33.33 * midterm) / 100
@@ -17,7 +24,7 @@ if (prelim >= 40 and prelim <= 100) and (midterm >= 40 and midterm <= 100) and (
     print(f"Your FINAL GRADE is {gpavg}")
 
 # GPA Percentage and Descriptions
-if (gpavg == 99 and gpavg == 100):
+if (gpavg >= 99 and gpavg <= 100):
     percentage = 1.00
     print("Your GPA is 1.00")
     print("Excellent")
@@ -66,13 +73,3 @@ elif gpavg >= 40:
     percentage = 5.00
     print("Your GPA is 5.00")
     print("Failed")
-    
-# Errors
-else:
-    print("Error: Invalid input.")
-    if (prelim < 40 or prelim > 100):
-        print("Invalid grade.")
-    if (midterm < 40 or midterm > 100):
-        print("Invalid grade.")
-    if (final < 40 or final > 100):
-        print("Invalid grade.")
