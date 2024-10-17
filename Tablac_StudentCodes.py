@@ -16,46 +16,56 @@ if (prelim >= 40 and prelim <= 100) and (midterm >= 40 and midterm <= 100) and (
     gpavg = round((prelim + midterm + final))
     print(f"Your FINAL GRADE is {gpavg}")
 
-# GPA Percentage 
+# GPA Percentage and Descriptions
 if (gpavg == 99 and gpavg == 100):
     percentage = 1.00
     print("Your GPA is 1.00")
+    print("Excellent")
     
 elif gpavg >= 96:
     percentage = 1.25
     print("Your GPA is 1.25")
+    print("Outstanding")
     
 elif gpavg >= 93:
     percentage = 1.50
     print("Your GPA is 1.50")
+    print("Superior")
 
 elif gpavg >= 90:
     percentage = 1.75
     print("Your GPA is 1.75")
+    print("Very Good")
     
 elif gpavg >= 87:
     percentage = 2.00
     print("Your GPA is 2.00")
+    print("Good")
     
 elif gpavg >= 84:
     percentage = 2.25
     print("Your GPA is 2.25")
+    print("Satisfactory")
 
 elif gpavg >= 81:
     percentage = 2.50
     print("Your GPA is 2.50")
+    print("Fairly Satisfactory")
     
 elif gpavg >= 78:
     percentage = 2.75
     print("Your GPA is 2.75")
+    print("Fair")
     
 elif gpavg >= 75:
     percentage = 3.00
     print("Your GPA is 3.00")
+    print("Passed")
 
 elif gpavg >= 40:
     percentage = 5.00
     print("Your GPA is 5.00")
+    print("Failed")
     
 # Errors
 else:
